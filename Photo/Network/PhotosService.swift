@@ -16,8 +16,7 @@ class PhotosService {
   }
 
   func getAllPhotos() async throws -> [Photo] {
-//    TDOD: Implement lazy loading
-    guard let url = URL(string: "/photos?_start=0&_limit=5", relativeTo: baseURL)  else {
+    guard let url = URL(string: "/photos", relativeTo: baseURL)  else {
       throw PhotosServiceError.badURL
     }
 
