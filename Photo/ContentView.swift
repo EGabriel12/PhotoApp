@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
 
   @Environment(Album.self) var album
-  @State private var isLoading = false
   @State private var isFinished = false
 
   var body: some View {
