@@ -11,6 +11,10 @@
 		8956EC542CE3CBD700BED2EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EC532CE3CBD700BED2EF /* ContentView.swift */; };
 		8956EC562CE3CBD900BED2EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8956EC552CE3CBD900BED2EF /* Assets.xcassets */; };
 		8956EC592CE3CBD900BED2EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8956EC582CE3CBD900BED2EF /* Preview Assets.xcassets */; };
+		8956EC612CE3D2D300BED2EF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EC602CE3D2D300BED2EF /* Album.swift */; };
+		8956EC632CE3D36600BED2EF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EC622CE3D36600BED2EF /* Photo.swift */; };
+		8956EC662CE3D48900BED2EF /* PhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EC652CE3D48900BED2EF /* PhotosService.swift */; };
+		8956EC682CE3E1E500BED2EF /* PhotosServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956EC672CE3E1E500BED2EF /* PhotosServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8956EC532CE3CBD700BED2EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8956EC552CE3CBD900BED2EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8956EC582CE3CBD900BED2EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8956EC602CE3D2D300BED2EF /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		8956EC622CE3D36600BED2EF /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		8956EC652CE3D48900BED2EF /* PhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosService.swift; sourceTree = "<group>"; };
+		8956EC672CE3E1E500BED2EF /* PhotosServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		8956EC502CE3CBD700BED2EF /* Photo */ = {
 			isa = PBXGroup;
 			children = (
+				8956EC642CE3D45B00BED2EF /* Network */,
+				8956EC5F2CE3D23500BED2EF /* Models */,
 				8956EC512CE3CBD700BED2EF /* PhotoApp.swift */,
 				8956EC532CE3CBD700BED2EF /* ContentView.swift */,
 				8956EC552CE3CBD900BED2EF /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				8956EC582CE3CBD900BED2EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8956EC5F2CE3D23500BED2EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8956EC602CE3D2D300BED2EF /* Album.swift */,
+				8956EC622CE3D36600BED2EF /* Photo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8956EC642CE3D45B00BED2EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8956EC652CE3D48900BED2EF /* PhotosService.swift */,
+				8956EC672CE3E1E500BED2EF /* PhotosServiceError.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8956EC632CE3D36600BED2EF /* Photo.swift in Sources */,
 				8956EC542CE3CBD700BED2EF /* ContentView.swift in Sources */,
+				8956EC662CE3D48900BED2EF /* PhotosService.swift in Sources */,
 				8956EC522CE3CBD700BED2EF /* PhotoApp.swift in Sources */,
+				8956EC612CE3D2D300BED2EF /* Album.swift in Sources */,
+				8956EC682CE3E1E500BED2EF /* PhotosServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

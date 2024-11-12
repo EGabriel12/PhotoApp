@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PhotoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+
+  private var service = PhotosService(baseURL: URL(string: "https://jsonplaceholder.typicode.com")!)
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environment(Album(photosService: service))
     }
+  }
 }
